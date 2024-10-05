@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100dvh; /* A imagem vai ocupar toda a altura da tela */
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorção */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #f8f5e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+}
+
+.recomendados {
+    background-color: #3d2903;
+    padding: 20px;
+    color: #f8f5e6;
+}
+
+.recomendados h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.carrossel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.carrossel {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    width: 100%; /* Garante que o carrossel ocupe toda a largura */
+}
+
+.produto {
+    background-color: #2b1e0e;
+    min-width: 23%;
+    max-width: 23%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: center;
+}
+
+.imagem-produto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.descricao-produto {
+    color: #f8f5e6;
+}
+
+.descricao-produto p {
+    margin: 5px 0;
+}
+
+.descricao-produto p:last-child {
+    font-weight: bold;
+}
+
+/* Media Queries para Responsividade */
+
+/* Ajuste para tablets e telas menores que 1024px */
+@media (max-width: 1024px) {
+    .produto {
+        min-width: 31%;
+        max-width: 31%;
+    }
+
+    .overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ajuste para smartphones e telas menores que 768px */
+@media (max-width: 768px) {
+    .produto {
+        min-width: 46%;
+        max-width: 46%;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+}
+
+/* Ajuste para telas menores que 480px */
+@media (max-width: 480px) {
+    .produto {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+    }
+}
