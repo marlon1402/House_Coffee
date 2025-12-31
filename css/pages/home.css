@@ -1,0 +1,18 @@
+.btn-primary {
+    display: inline-block;
+    padding: 14px 32px;
+
+    background-color: transparent;
+    color: var(--color-gold);
+
+    border: 2px solid var(--color-gold);
+    border-radius: 4px;
+
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+}
