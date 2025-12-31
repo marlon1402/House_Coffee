@@ -1,0 +1,10 @@
+:root {
+    --color-black: #0d0d0d;
+    --color-dark: #111;
+    --color-gold: #d6c48c;
+    --color-white: #ffffff;
+
+    --font-primary: 'Poppins', sans-serif;
+
+    --container-width: 1200px;
+}
