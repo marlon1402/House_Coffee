@@ -1,0 +1,30 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("../../assets/images/hero-image.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    margin-left: 0;
+    padding-left: 150px;
+}
+
+.hero-content h1 {
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    margin-bottom: 32px;
+    max-width: 520px;
+}
