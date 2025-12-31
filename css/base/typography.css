@@ -1,0 +1,17 @@
+body {
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
