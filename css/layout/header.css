@@ -1,0 +1,61 @@
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 24px 0;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo i {
+    font-size: 1.8rem;
+    color: var(--color-gold);
+}
+
+.nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+.nav a {
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--color-gold);
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.search {
+    transition: color 0.3s
+}
+
+.shopping {
+    transition: color 0.3s
+}
+
+.search:hover {
+    color: var(--color-gold);
+}
+
+.shopping:hover {
+    color: var(--color-gold);
+}
